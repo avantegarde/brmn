@@ -15,7 +15,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico"/>
+    <!-- <link rel="shortcut icon" href="<?php // echo get_stylesheet_directory_uri(); ?>/favicon.ico"/> -->
 
     <?php wp_head(); ?>
 
@@ -70,12 +70,8 @@
             <div class="container">
                 <h1 id="logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                        <img src="<?php echo get_template_directory_uri() . '/inc/images/logo.png'; ?>" width="200">
-                        <?php if ( is_front_page() ) : ?>
-                            <span>Morrison Reist Krauss - Expert Family & Employment Lawyers</span>
-                        <?php else : ?>
-                            <span><?php bloginfo('name'); ?></span>
-                        <?php endif; ?>
+                        <img src="<?php echo get_template_directory_uri() . '/inc/images/logo.png'; ?>" width="200" alt="<?php bloginfo('name'); ?>">
+                        <span><?php bloginfo('name'); ?></span>
                     </a>
                 </h1>
                 <!-- Toolbar -->
